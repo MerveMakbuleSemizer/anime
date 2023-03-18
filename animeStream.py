@@ -21,5 +21,5 @@ recommendations = detect_similars.detect_similar_users(userID)
 
 count = 1
 for anime in recommendations.index:
-    st.markdown(str(count) + anime)
+    st.markdown(str(count)+ ". " + anime)
     count += 1
