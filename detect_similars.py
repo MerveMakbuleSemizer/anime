@@ -30,7 +30,7 @@ user_sim_corr = matrix_norm.T.corr()
 def detect_similar_users(target_user):
     n = 10
     threshold = 0.4 
-    similar_users = user_sim_corr[user_sim_corr[target_user] >= threshold][1:] 
+    similar_users = user_sim_corr[user_sim_corr[target_user] >= threshold].sort_values(by=target_user,ascending=False)[1:] 
     watched_by_user = matrix_norm[matrix_norm.index == target_user].dropna(axis=1,how="all")
     watched_by_similar_user = matrix_norm[matrix_norm.index.isin(similar_users.index)].dropna(axis=1,how="all")
     watched_by_similar_user.drop(watched_by_user.columns,axis=1, inplace=True, errors='ignore') # benzer kullanıcıların izleyip hedef kullanıcının izlemediği animelerin listesi
