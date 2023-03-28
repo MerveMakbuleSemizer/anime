@@ -2,7 +2,6 @@ import pandas as pd
 import numpy as np
 import scipy.stats
 
-import seaborn as sns
 from sklearn.metrics.pairwise import cosine_similarity
 
 cols = list(pd.read_csv("anime_new.csv",nrows=1))
