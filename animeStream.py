@@ -6,9 +6,8 @@ st.set_page_config(
     page_title="Anime Recommender",
     page_icon="https://www.asialogy.com/wp-content/uploads/anime-nedir-nasil-yapilir.jpg"
     )
-st.title("Covid Survive Classifier Project")
+st.title("Anime Recommendation Project")
 
-st.markdown("This website was created to predict whether a patient will succumb to Covid-19 disease based on some current symptoms and medical history. The model was trained by the dataset provided by the Mexican government.")
 st.image("https://www.asialogy.com/wp-content/uploads/anime-nedir-nasil-yapilir.jpg")
 st.sidebar.markdown("**Choose** User ID")
 # anime = pd.read_csv("anime.csv")
